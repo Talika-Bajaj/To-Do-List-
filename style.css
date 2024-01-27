@@ -7,11 +7,13 @@
 
 body {
     background: linear-gradient(50deg, cadetblue, plum);
+    /* height: 100%;
+    width: 100%; */
 }
 
 .container {
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     padding: 50px 25px;
     /* text-align: center; */
     display: grid;
@@ -38,7 +40,8 @@ body {
     font-size: 18px;
     /* border-radius: 10px; */
     border: 3px solid #218b50;
-    width: 40%;
+    width: 50%;
+    outline: none;
 }
 
 #add-btn {
@@ -52,7 +55,7 @@ body {
 }
 
 .list-items {
-    width: 50%;
+    width: 58%;
     /* text-align: center; */
     display: flex;
     justify-content: center;
@@ -61,11 +64,20 @@ body {
     border: 4px solid red;
 }
 
-.item-list {
+#item-list {
     width: 100%;
 }
 
 .list {
-    background-color: black;
+    background-color: rgb(51, 105, 76);
     color: white;
+    font-size: 19px;
+    padding: 13px 10px;
+    border-bottom: 2px solid white;
+    list-style-type: none;
+}
+
+.list:nth-child(even) {
+    background-color: white;
+    color: black;
 }
