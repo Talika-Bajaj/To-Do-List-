@@ -7,6 +7,7 @@
 
 body {
     background: linear-gradient(50deg, cadetblue, plum);
+    height: 100vh;
     /* height: 100%;
     width: 100%; */
 }
@@ -29,10 +30,18 @@ body {
     font-size: 40px;
 }
 
+.content {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+
 .new-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
 }
 
 #task {
@@ -60,8 +69,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    margin: auto;
-    border: 4px solid red;
+    margin: 0 auto;
+    /* border: 4px solid red; */
 }
 
 #item-list {
@@ -69,15 +78,42 @@ body {
 }
 
 .list {
+    position: relative;
     background-color: rgb(51, 105, 76);
     color: white;
     font-size: 19px;
     padding: 13px 10px;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     list-style-type: none;
 }
 
 .list:nth-child(even) {
     background-color: white;
     color: black;
+}
+
+.list:nth-child(even) .check, .list:nth-child(even) .close {
+    background-color: #fff;
+    color: black;
+}
+.check {
+    position: absolute;
+    top: 9px;
+    font-size: 21px;
+    right: 53px;
+    cursor: pointer;
+    background-color: rgb(51, 105, 76);
+    border: none;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    right: 20px;
+    font-size: 21px;
+    background-color: rgb(51, 105, 76);
+    border: none;
+    color: white;
 }
