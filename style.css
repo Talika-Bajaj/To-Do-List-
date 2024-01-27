@@ -15,10 +15,16 @@
     gap: 55px;
 }
 
+.new-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #task {
     padding: 13px 10px;
     font-size: 18px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 3px solid #218b50;
     width: 40%;
 }
