@@ -16,5 +16,19 @@
 }
 
 #task {
-    padding: 15px;
+    padding: 13px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 3px solid #218b50;
+    width: 40%;
+}
+
+#add-btn {
+    padding: 10px 15px;
+    font-size: 24px;
+    background-color: #468863;
+    border: 3px solid seagreen;
+    border-left: 0;
+    color: white;
+    cursor: pointer;
 }
