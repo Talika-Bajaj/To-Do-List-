@@ -1,14 +1,11 @@
 
-var check = document.getElementsByClassName("check");
-var i;
-for (i = 0; i < check.length; i++) {
-    check[i].onclick = function () {
-        // let parent = this.parentElement;
-        console.log("dlkcksvnkjdndnvou");
-        // parent.style.display = "none";
-    }
-}
+var close = document.getElementsByClassName("close");
 
+close.onclick = function () {
+    let parent = this.parentElement;
+    console.log(parent);
+    parent.style.display = "none";
+}
 
 //function to add a new task
 function newTask() {
@@ -32,13 +29,21 @@ function newTask() {
     // button.appendChild(txt);
     li.appendChild(check);
 
-    for (let i = 0; i < check.length; i++) {
-        check[i].onclick = function () {
-            // let parent = this.parentElement;
-            console.log("kvndkjfvndjnjfvnu");
-            // parent.style.display = "none";
-        }
+    let complete  = document.querySelector(".complete");
+    let completed  = document.querySelector(".completed");
+    check.onclick = function () {
+        let parent = this.parentElement;
+        // console.log(parent);
+        // parent.style.display = "none";
+        let fC = parent.firstElementChild;
+        console.log(fC);
+        fC.remove();
+        // fC.style.display = "none";
+        complete.style.display = "block";
+        completed.appendChild(parent);
+        parent.style.textDecoration = "line-through";
     }
+   
 
     //creating a button to check a task
     let close = document.createElement("button");
@@ -48,7 +53,11 @@ function newTask() {
     // button.appendChild(txt);
     li.appendChild(close);
 
- 
+    close.onclick = function () {
+        let parent = this.parentElement;
+        console.log(parent);
+        parent.style.display = "none";
+    }
 
     
 }
