@@ -20,6 +20,10 @@ function newTask() {
     li.className = "list";
     li.innerHTML = task;    //setting input field value in li tag
 
+    item.appendChild(li);   //adding li tag to ul tag
+
+    document.getElementById("task").value = "";
+
     //creating a button to check a task
     let check = document.createElement("button");
     check.className = "check";
@@ -44,7 +48,7 @@ function newTask() {
     // button.appendChild(txt);
     li.appendChild(close);
 
-    item.appendChild(li);   //adding li tag to ul tag
+ 
 
-    document.getElementById("task").value = "";
+    
 }
