@@ -1,3 +1,18 @@
+const hamburger = document.querySelector(".hamburger");
+const sideBar = document.querySelector(".side-bar");
+const themeMenu = document.querySelector(".theme-menu");
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    sideBar.classList.toggle("active");
+    themeMenu.classList.toggle("active");
+    // navMenu.classList.toggle("active");
+  });
+
+
+let indigo = document.getElementsByClassName("ind");
+indigo.onclick = function () {
+    console.log("jbjkcbskjd");
+}
 
 var close = document.getElementsByClassName("close");
 
@@ -11,13 +26,18 @@ close.onclick = function () {
 function newTask() {
     let item = document.getElementById("item-list");
 
+    let li = document.createElement("li");
     //accesing the task from input field
     let task = document.getElementById("task").value;
-    let li = document.createElement("li");
     li.className = "list";
     li.innerHTML = task;    //setting input field value in li tag
 
-    item.appendChild(li);   //adding li tag to ul tag
+    if (task === "") {
+        document.querySelector(".pop-up").style.display = "block";
+    } else {
+        item.appendChild(li);   //adding li tag to ul tag
+    }
+
 
     document.getElementById("task").value = "";
 
@@ -58,6 +78,16 @@ function newTask() {
         console.log(parent);
         parent.style.display = "none";
     }
-
     
 }
+
+let cross = document.querySelector(".cross");
+cross.onclick = function () {
+    document.querySelector(".pop-up").style.display = "none";
+}
+
+let ok = document.querySelector(".ok");
+ok.onclick = function () {
+    document.querySelector(".pop-up").style.display = "none";
+}
+
