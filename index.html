@@ -11,12 +11,46 @@
 <body>
     <div class="container">
         <h1>To-Do List App</h1>
+        <div class="side-bar">     
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h3>Themes</h3>
+            <ul class="theme-menu">
+                <li class="theme">
+                    <div class="circle ind"></div>
+                    Indigo</li>
+                    <li class="theme">
+                        <div class="circle blue"></div>Blue
+                    </li>
+                    <li class="theme">
+                        <div class="circle green"></div>Green
+                    </li>
+                    <li class="theme">
+                        <div class="circle yellow"></div>Yellow
+                    </li>
+                    <li class="theme">
+                        <div class="circle orange"></div>Orange
+                    </li>
+                    <li class="theme">
+                        <div class="circle red"></div>Red
+                    </li>
+                </ul>
+          
+            </div>
 
             <div class="new-item">
                 <input type="text" placeholder="Add New Task" id="task">
                 <input type="button" value="Add" id="add-btn" onclick="newTask()">
             </div>
             
+            <div class="pop-up">
+                <span class="cross">&#10006;</span>
+                <p>Please Enter text</p>
+                <button class="ok">OK</button>
+            </div>
         <div class="list-items">
             <ul id="item-list">
             </ul>
@@ -28,7 +62,6 @@
 
             </div>
         </div>
-
     </div>
     <script src="script.js"></script>
 </body>
