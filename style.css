@@ -7,16 +7,13 @@
 
 body {
    background:linear-gradient(0.25turn, plum, #888, cadetblue);
-    /* height: 100vh; */
-     height: 100%;
-    /*width: 100%; */
+    height: 100%;
 }
 
 .container {
     justify-content: center;
     height: 100%;
     padding: 24px 25px 50px;;
-    /* text-align: center; */
     display: grid;
     grid-template-rows: 90px 50px auto auto;
     gap: 55px;
@@ -26,7 +23,6 @@ body {
 }
 
 .side-bar {
-    /* display: none; */
     background-color: black;
     position: fixed;
     top: 0;
@@ -64,20 +60,19 @@ body {
     margin: 2px auto;
     transition: all 0.3s ease-in-out;
     background-color: white;
-    /* gap: 6px; */
-  }
+}
 
-  .hamburger.active .bar:nth-child(2) {
+.hamburger.active .bar:nth-child(2) {
     opacity: 0;
-  }
+}
 
-  .hamburger.active .bar:nth-child(1) {
+.hamburger.active .bar:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
-  }
+}
 
-  .hamburger.active .bar:nth-child(3) {
+.hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
+}
 
 .theme-menu {
     width: 35%;
@@ -109,6 +104,10 @@ body {
     height: 24px;
 }
 
+.violet {
+    border: 4px solid violet;
+}
+
 .ind {
     border: 4px solid indigo;
 }
@@ -133,25 +132,14 @@ body {
     border: 4px solid red;
 }
 
-
-
 .container h1 {
-    /* text-align: center; */
     font-size: 40px;
 }
-
-/* .content {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-} */
 
 .new-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
 }
 
 #task {
@@ -224,12 +212,10 @@ body {
 
 .list-items {
     width: 57%;
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: stretch;
     margin: 0 auto;
-    /* border: 4px solid red; */
     margin-top: -53px;
 }
 
@@ -239,32 +225,32 @@ body {
 
 .list {
     position: relative;
-    background-color: rgb(51, 105, 76);
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 19px;
     padding: 13px 10px;
-    /* border-bottom: 2px solid white; */
     list-style-type: none;
 }
 
-.list:nth-child(even) {
-    background-color: white;
-    color: black;
+.list:nth-child(odd) {
+    background-color: rgb(51, 105, 76);
+    color: white;
 }
 
-.list:nth-child(even) .check, .list:nth-child(even) .close {
-    background-color: #fff;
-    color: black;
+.list:nth-child(odd) .check, .list:nth-child(odd) .close {
+    background-color: rgb(51, 105, 76);
+    color: white;
 }
+
 .check {
     position: absolute;
     top: 9px;
     font-size: 21px;
+    background-color: #fff;
+    color: black;
     right: 53px;
     cursor: pointer;
-    background-color: rgb(51, 105, 76);
     border: none;
-    color: white;
 }
 
 .close {
@@ -273,9 +259,9 @@ body {
     cursor: pointer;
     right: 20px;
     font-size: 21px;
-    background-color: rgb(51, 105, 76);
+    background-color: #fff;
+    color: black;
     border: none;
-    color: white;
 }
 
 .complete {
@@ -301,8 +287,3 @@ body {
     background-color: white;
     color: black;
 }
-
-/* .completed:nth-child(even) .close {
-    background-color: #fff;
-    color: black;
-} */
