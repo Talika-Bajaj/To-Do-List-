@@ -15,9 +15,9 @@ body {
     height: 100%;
     padding: 24px 25px 50px;;
     display: grid;
-    grid-template-rows: 90px 50px auto auto;
+    grid-template-rows: 90px 51px auto auto;
     gap: 55px;
-    max-width: 90vw;
+    max-width: 95vw;
     margin: auto;
     grid-template-columns: 100%;
 }
@@ -29,7 +29,8 @@ body {
     right: -100%;
     height: 100%;
     width: 20%;
-    transition: 0.5s
+    transition: 0.5s;
+    z-index: 2;
 }
 
 .side-bar.active {
@@ -134,12 +135,15 @@ body {
 
 .container h1 {
     font-size: 40px;
+    color: white;
 }
 
 .new-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 724px;
+    margin: auto;
 }
 
 #task {
@@ -147,14 +151,15 @@ body {
     font-size: 18px;
     /* border-radius: 10px; */
     border: 3px solid #218b50;
-    width: 50%;
+    width: -moz-available;
+    width: -webkit-fill-available;
     outline: none;
 }
 
 #add-btn {
     padding: 10px 15px;
     font-size: 24px;
-    background-color: #468863;
+    background-color: #529d73;
     border: 3px solid seagreen;
     border-left: 0;
     color: white;
@@ -211,7 +216,7 @@ body {
 }
 
 .list-items {
-    width: 57%;
+    width: 724px;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -240,6 +245,10 @@ body {
 .list:nth-child(odd) .check, .list:nth-child(odd) .close {
     background-color: rgb(51, 105, 76);
     color: white;
+}
+
+.para {
+    width: 90%;
 }
 
 .check {
@@ -276,7 +285,7 @@ body {
 }
 
 .completed {
-    width: 57%;
+    width: 724px;
     display: flex;
     flex-direction: column;
     margin: auto;
