@@ -41,7 +41,7 @@ colorSix.addEventListener("click",function () {
 
 let colorSeven = document.querySelector(".color-seven");
 colorSeven.addEventListener("click",function () {
-    document.body.style.background = "linear-gradient(0.25turn, indianred, #888, violet6)";
+    document.body.style.background = "linear-gradient(0.25turn, indianred, #888, violet)";
 })
 
 
@@ -88,8 +88,10 @@ function newTask() {
     //accesing the task from input field
     let task = document.getElementById("task").value;
     li.className = "list";
-    li.innerHTML = task;    //setting input field value in li tag
-
+    let p = document.createElement("p");
+    p.className = "para";
+    p.innerHTML = task;    //setting input field value in li tag
+    li.appendChild(p);
     if (task === "") {
         document.querySelector(".pop-up").style.display = "block";
     } else {
@@ -111,7 +113,9 @@ function newTask() {
         let parent = this.parentElement;
         let fC = parent.firstElementChild;
         console.log(fC);
-        fC.remove();
+        let second = fC.nextElementSibling;
+        console.log(second);
+        second.remove();
         complete.style.display = "block";
         completed.appendChild(parent);
         parent.style.textDecoration = "line-through";
@@ -129,7 +133,7 @@ function newTask() {
     close.onclick = function () {
         let parent = this.parentElement;
         console.log(parent);
-        parent.style.display = "none";
+        parent.remove();
     }
     
 }
