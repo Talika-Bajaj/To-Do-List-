@@ -11,50 +11,56 @@
 
 <body>
     <div class="container">
-        <h1>To-Do List App</h1>
-        <div class="side-bar">     
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <h3>Themes</h3>
-            <ul class="theme-menu">
-                <li class="theme color-one">
-                    <div class="circle violet"></div>
-                    Violet</li>
-                <li class="theme color-two">
-                    <div class="circle ind"></div>
-                    Indigo</li>
-                    <li class="theme color-three">
-                        <div class="circle blue"></div>Blue
-                    </li>
-                    <li class="theme color-four">
-                        <div class="circle green"></div>Green
-                    </li>
-                    <li class="theme color-five">
-                        <div class="circle yellow"></div>Yellow
-                    </li>
-                    <li class="theme color-six">
-                        <div class="circle orange"></div>Orange
-                    </li>
-                    <li class="theme color-seven">
-                        <div class="circle red"></div>Red
-                    </li>
-                </ul>
-          
-            </div>
+        <header>
+            <nav>
+                <h1>To-Do List App</h1>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="side-bar">
+                    <h3>Themes</h3>
+                    <ul class="theme-menu">
+                        <li class="theme color-one">
+                            <div class="circle violet"></div>
+                            Violet
+                        </li>
+                        <li class="theme color-two">
+                            <div class="circle ind"></div>
+                            Indigo
+                        </li>
+                        <li class="theme color-three">
+                            <div class="circle blue"></div>Blue
+                        </li>
+                        <li class="theme color-four">
+                            <div class="circle green"></div>Green
+                        </li>
+                        <li class="theme color-five">
+                            <div class="circle yellow"></div>Yellow
+                        </li>
+                        <li class="theme color-six">
+                            <div class="circle orange"></div>Orange
+                        </li>
+                        <li class="theme color-seven">
+                            <div class="circle red"></div>Red
+                        </li>
+                    </ul>
 
-            <div class="new-item">
-                <input type="text" placeholder="Add New Task" id="task">
-                <input type="button" value="Add" id="add-btn" onclick="newTask()">
-            </div>
-            
-            <div class="pop-up">
-                <span class="cross">&#10006;</span>
-                <p>Please Enter text</p>
-                <button class="ok">OK</button>
-            </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="new-item">
+            <input type="text" placeholder="Add New Task" id="task">
+            <input type="button" value="Add" id="add-btn" onclick="newTask()">
+        </div>
+
+        <div class="pop-up">
+            <span class="cross">&#10006;</span>
+            <p>Please Enter text</p>
+            <button class="ok">OK</button>
+        </div>
         <div class="list-items">
             <ul id="item-list">
             </ul>
