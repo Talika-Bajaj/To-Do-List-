@@ -10,7 +10,10 @@
 </head>
 
 <body>
+    <!-- container box  -->
     <div class="container">
+
+        <!-- header  -->
         <header>
             <nav>
                 <h1>To-Do List App</h1>
@@ -19,6 +22,8 @@
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
+
+                <!-- menu  -->
                 <div class="side-bar">
                     <h3>Themes</h3>
                     <ul class="theme-menu">
@@ -46,34 +51,40 @@
                             <div class="circle red"></div>Red
                         </li>
                     </ul>
-
                 </div>
+
             </nav>
         </header>
 
+        <!-- Add new task box  -->
         <div class="new-item">
             <input type="text" placeholder="Add New Task" id="task">
             <input type="button" value="Add" id="add-btn" onclick="newTask()">
         </div>
 
+        <!-- pop-up box  -->
         <div class="pop-up">
             <span class="cross">&#10006;</span>
             <p>Please Enter text</p>
             <button class="ok">OK</button>
         </div>
+
+        <!-- tasks list box  -->
         <div class="list-items">
             <ul id="item-list">
             </ul>
         </div>
 
+        <!-- completed tasks box  -->
         <div class="complete">
             <h2>Completed Tasks</h2>
-            <div class="completed">
-
-            </div>
+            <div class="completed"></div>
         </div>
     </div>
+
+    <!-- script tag -->
     <script src="script.js"></script>
+
 </body>
 
 </html>

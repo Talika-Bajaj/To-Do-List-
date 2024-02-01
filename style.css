@@ -6,16 +6,17 @@
 }
 
 body {
-   background:linear-gradient(0.25turn, plum, #888, cadetblue);
+    background: linear-gradient(0.25turn, plum, #888, cadetblue);
     height: 100%;
     overflow-x: hidden;
-    /* position: relative; */
 }
 
+/* container box  */
 .container {
     justify-content: center;
     height: 100%;
-    padding: 24px 25px 50px;;
+    padding: 24px 25px 50px;
+    ;
     display: grid;
     grid-template-rows: 90px 51px auto auto;
     gap: 55px;
@@ -25,6 +26,7 @@ body {
     position: relative;
 }
 
+/* header */
 nav {
     display: flex;
     justify-content: space-between;
@@ -47,32 +49,32 @@ nav h1 {
 }
 
 .hamburger .bar {
-display: block;
-width: 25px;
-height: 3px;
-margin: 2px auto;
-transition: all 0.3s ease-in-out;
-background-color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 .hamburger.active .bar:nth-child(2) {
-opacity: 0;
+    opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
+/* menu */
 .side-bar {
     background-color: black;
     position: fixed;
     top: 0;
     right: -30%;
-    /* height: 103.5%; */
     width: 20%;
     transition: 0.5s;
     z-index: 2;
@@ -89,16 +91,11 @@ transform: translateY(-8px) rotate(-45deg);
     font-size: 28px;
     border-bottom: 2px solid white;
     padding: 0 0 6px 15px;
-    /* margin: 77px auto 0; */
 }
 
 .theme-menu {
     width: 230px;
     padding: 20px;
-    /* position: fixed;
-    right: -100%;
-    top: 123px;
-    z-index: 2; */
     transition: 0.5s;
 }
 
@@ -123,33 +120,34 @@ transform: translateY(-8px) rotate(-45deg);
 }
 
 .violet {
-border: 4px solid violet;
+    border: 4px solid violet;
 }
 
 .ind {
-border: 4px solid indigo;
+    border: 4px solid indigo;
 }
 
 .blue {
-border: 4px solid blue;
+    border: 4px solid blue;
 }
 
 .green {
-border: 4px solid  rgb(51, 105, 76);
+    border: 4px solid rgb(51, 105, 76);
 }
 
 .yellow {
-border: 4px solid yellow;
+    border: 4px solid yellow;
 }
 
 .orange {
-border: 4px solid orange;
+    border: 4px solid orange;
 }
 
 .red {
-border: 4px solid red;
-} 
+    border: 4px solid red;
+}
 
+/* Add new task box  */
 .new-item {
     display: flex;
     justify-content: center;
@@ -161,7 +159,6 @@ border: 4px solid red;
 #task {
     padding: 13px 10px;
     font-size: 18px;
-    /* border-radius: 10px; */
     border: 3px solid #218b50;
     width: -moz-available;
     width: -webkit-fill-available;
@@ -178,8 +175,9 @@ border: 4px solid red;
     cursor: pointer;
 }
 
+/* pop-up box  */
 .pop-up {
-    background: linear-gradient(rgba(145, 71, 98,1), #DF826C);
+    background: linear-gradient(rgba(145, 71, 98, 1), #DF826C);
     display: none;
     position: fixed;
     border: 2px solid black;
@@ -227,6 +225,7 @@ border: 4px solid red;
     font-weight: bold;
 }
 
+/* tasks list box  */
 .list-items {
     width: 724px;
     display: flex;
@@ -254,7 +253,8 @@ border: 4px solid red;
     color: white;
 }
 
-.list:nth-child(odd) .check, .list:nth-child(odd) .close {
+.list:nth-child(odd) .check,
+.list:nth-child(odd) .close {
     background-color: rgb(51, 105, 76);
     color: white;
 }
@@ -285,6 +285,7 @@ border: 4px solid red;
     border: none;
 }
 
+/* completed tasks list box  */
 .complete {
     display: none;
 }

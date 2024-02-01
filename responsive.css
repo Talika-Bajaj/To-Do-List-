@@ -1,19 +1,15 @@
-/* @media screen and (max-width: 1180px) {
-    .para {
-        width: 524px;
-    }
-} */
-
 @media screen and (max-width: 900px) {
+    /* Add new task box */
     .new-item {
         width: 524px;
     }
 
-    /* pop-up container  */
+    /* pop-up container */
     .pop-up {
         left: 27%;
     }
 
+    /* tasks list box */
     .list-items {
         width: 524px;
     }
@@ -22,6 +18,7 @@
         width: 87%;
     }
 
+    /* completed tasks box */
     .completed {
         width: 524px;
     }
@@ -29,11 +26,12 @@
 
 @media screen and (max-width: 700px) {
 
-    /* container box  */
+    /* container box */
     .container h1 {
         font-size: 36px;
     }
 
+    /* menu */
     .side-bar {
         width: 180px;
     }
@@ -46,18 +44,18 @@
         right: -8%;
     }
 
-    /* new-item box */
+    /* Add new task box */
     .new-item {
         width: 450px;
     }
 
-    /* pop-up container  */
+    /* pop-up box */
     .pop-up {
         left: 32%;
         width: 35%;
     }
 
-    /* list-items box */
+    /* tasks list box */
     .list-items {
         width: 450px;
     }
@@ -66,7 +64,7 @@
         width: 85%;
     }
 
-    /* complete box */
+    /* completed tasks box */
     .complete h2 {
         font-size: 32px;
     }
@@ -77,16 +75,14 @@
 }
 
 @media screen and (max-width: 650px) {
-    /* .side-bar {
-        width: 180px;
-    } */
-
+    /* menu */
     .theme-menu.active {
         right: -5%;
     }
 }
 
 @media screen and (max-width: 600px) {
+    /* menu */
     .hamburger {
         right: 23px;
     }
@@ -99,9 +95,8 @@
         right: -3%;
     }
 
-    /* pop-up container  */
+    /* pop-up box  */
     .pop-up {
-        /* left: 18%; */
         width: 40%;
     }
 }
@@ -117,6 +112,7 @@
         right: -1%;
     }
 
+    /* Add new task box */
     .new-item {
         width: 380px;
         flex-direction: column;
@@ -135,12 +131,13 @@
         border-left: 3px solid seagreen;
     }
 
-    /* pop-up container  */
+    /* pop-up container */
     .pop-up {
         left: 24%;
         width: 50%;
     }
 
+    /* tasks list box  */
     .list-items {
         width: 380px;
         margin-top: -3px;
@@ -154,7 +151,7 @@
         width: 82%;
     }
 
-    /* complete box */
+    /* completed tasks box */
     .complete h2 {
         font-size: 30px;
     }
@@ -165,10 +162,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    /* .side-bar {
-        width: 180px;
-    } */
-
+    /* menu */
     .hamburger {
         right: 23px;
     }
@@ -177,10 +171,12 @@
         right: 4%;
     }
 
+    /* Add new task box */
     .new-item {
         width: 310px;
     }
 
+    /* tasks list box */
     .list-items {
         width: 310px;
     }
@@ -189,7 +185,7 @@
         width: 78%;
     }
 
-    /* complete box */
+    /* completed tasks box */
     .complete h2 {
         font-size: 28px;
     }
@@ -201,11 +197,12 @@
 
 @media screen and (max-width: 450px) {
 
-    /* container box  */
+    /* container box */
     .container h1 {
         font-size: 29px;
     }
 
+    /* menu */
     .side-bar {
         right: -47%;
     }
@@ -214,24 +211,20 @@
         right: 7%;
     }
 
-
-
-    /* pop-up container  */
+    /* pop-up box */
     .pop-up {
         left: 19%;
         width: 61%;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 420px) {
+    /* Add new task box */
     .new-item {
         width: 270px;
     }
 
+    /* tasks list box */
     .list-items {
         width: 270px;
     }
@@ -240,7 +233,7 @@
         width: 74%;
     }
 
-    /* complete box */
+    /* completed tasks box */
     .complete h2 {
         font-size: 26px;
     }
@@ -254,7 +247,6 @@
 
     /* container box  */
     .container {
-        /* margin-left: 5px; */
         padding: 20px;
     }
 
@@ -263,6 +255,7 @@
         margin-top: 10px;
     }
 
+    /* menu */
     .hamburger {
         right: 16px;
     }
@@ -274,11 +267,12 @@
 }
 
 @media screen and (max-width: 360px) {
+    /* container box */
     .container {
-        /* margin-left: 5px; */
         padding: 15px;
     }
 
+    /* menu */
     .hamburger {
         right: 10px;
         top: 22px;
@@ -290,19 +284,23 @@
 }
 
 @media screen and (max-width: 350px) {
+     /* container box */
     .container {
         /* margin-left: 5px; */
         padding: 10px;
     }
 
+    /* menu */
     .theme-menu.active {
         right: 15%;
     }
 
+    /* Add new task box */
     .new-item {
         width: 250px;
     }
 
+    /* tasks list box */
     .list-items {
         width: 250px;
     }
@@ -311,7 +309,7 @@
         width: 72%;
     }
 
-    /* complete box */
+    /* completed tasks box */
     .complete h2 {
         font-size: 26px;
     }

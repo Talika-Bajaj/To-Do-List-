@@ -10,37 +10,37 @@ hamburger.addEventListener("click", () => {
 
 //setting themes for the document
 let colorOne = document.querySelector(".color-one");
-colorOne.addEventListener("click",function () {
+colorOne.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, violet, #888, indigo)";
 })
 
 let colorTwo = document.querySelector(".color-two");
-colorTwo.addEventListener("click",function () {
+colorTwo.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, indigo, #888, dodgerblue)";
 })
 
 let colorThree = document.querySelector(".color-three");
-colorThree.addEventListener("click",function () {
+colorThree.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, dodgerblue, #888, lightgreen)";
 })
 
 let colorFour = document.querySelector(".color-four");
-colorFour.addEventListener("click",function () {
+colorFour.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, lightgreen, #888, yellowgreen)";
 })
 
 let colorFive = document.querySelector(".color-five");
-colorFive.addEventListener("click",function () {
+colorFive.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, yellowgreen, #888, orange)";
 })
 
 let colorSix = document.querySelector(".color-six");
-colorSix.addEventListener("click",function () {
+colorSix.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, orange, #888, indianred)";
 })
 
 let colorSeven = document.querySelector(".color-seven");
-colorSeven.addEventListener("click",function () {
+colorSeven.addEventListener("click", function () {
     document.body.style.background = "linear-gradient(0.25turn, indianred, #888, violet)";
 })
 
@@ -107,8 +107,8 @@ function newTask() {
     check.innerHTML = "&#10004;"
     li.appendChild(check);
 
-    let complete  = document.querySelector(".complete");
-    let completed  = document.querySelector(".completed");
+    let complete = document.querySelector(".complete");
+    let completed = document.querySelector(".completed");
     check.onclick = function () {
         let parent = this.parentElement;
         let fC = parent.firstElementChild;
@@ -120,14 +120,12 @@ function newTask() {
         completed.appendChild(parent);
         parent.style.textDecoration = "line-through";
     }
-   
+
 
     //creating a button to check a task
     let close = document.createElement("button");
     close.className = "close";
     close.innerHTML = "&#10006;"
-    // let txt = document.createTextNode("&#10004;");
-    // button.appendChild(txt);
     li.appendChild(close);
 
     close.onclick = function () {
@@ -135,7 +133,6 @@ function newTask() {
         console.log(parent);
         parent.remove();
     }
-    
 }
 
 //closing a pop-up
